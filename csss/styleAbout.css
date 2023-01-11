@@ -1,0 +1,157 @@
+body {
+    background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+header {
+    background-color: black;
+}
+
+.navbar-nav li a {
+    color: white;
+    margin: 10px;
+}
+
+.navbar-nav li a:hover {
+    color: white;
+    opacity: 0.5;
+}
+
+.navbar-nav li a:active {
+    border-bottom: 1px solid white;
+}
+
+.navbar-nav li .flag {
+    width: 25px;
+    height: 20px;
+}
+
+/* DESCRIPTION */
+.skills {
+    max-width: 600px;
+    width: 100%;
+    padding: 0 2px;
+}
+
+.skill-name {
+    font-size: 20px;
+    color: white;
+    margin: 20px 0;
+}
+
+.skill-bar {
+    height: 15px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.skill-per {
+    height: 15px;
+    background-color: red;
+    border-radius: 5px;
+
+    /* In order to move the % tag. */
+    position: relative;
+
+    animation: fillAnimatedSkillBars 2s 1;
+}
+
+.skill-per::before {
+    content: attr(per);
+
+    background-color: white;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 5px 7px;
+
+    /* Move the % tag. */
+    position: absolute;
+    right: 0;
+    top: -30px;
+}
+
+/* use for animations*/
+@keyframes fillAnimatedSkillBars {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    flex-direction: column;
+
+    background-color: black;
+    color: white;
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+.container h3 {
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+.contact {
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.contact ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.follow {
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.follow .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: black;
+    transition: all 0.5s ease;
+}
+
+.follow .social-links a:hover {
+    opacity: 0.5;
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid white;
+    padding: 10px 0;
+}
+
+@media(max-width: 575px) {
+    .description iframe {
+        width: 99%;
+    }
+
+    footer {
+        position: relative;
+    }
+    .container {
+        flex-direction: column;
+    }
+}

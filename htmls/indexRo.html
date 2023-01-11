@@ -8,18 +8,17 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" type="text/css">
-        
-        <link rel="stylesheet" href="styleAbout.css">
+        <!-- CSS -->
+        <link rel="stylesheet" href="../csss/styleIndex.css">
 
-        <title></title>
+        <title>Portofoliu Personal</title>
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     </head>
-    
-    <!-- for testing to see the footer sticky: <body style="height:1500px"> -->
     <body>
         <header>
             <nav class="navbar navbar-expand-sm navbar-dark fs-5">
                 <a class="navbar-brand">
-                    <img src="images/Logo.png" width="100" height="100" alt="">
+                    <img src="../images/Logo.png" width="100" height="100" alt="">
                 </a>
 
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -28,19 +27,18 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <!-- ms-auto = set text to right side -->
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item active">
-                            <a href="index.html" class="nav-link">Home</a>
+                            <a href="indexRo.html" class="nav-link">Acasa</a>
                         </li>
                         <li class="nav-item active">
-                            <a href="about.html" class="nav-link">About Me</a>
+                            <a href="aboutRo.html" class="nav-link">Despre Mine</a>
                         </li>
                         <li class="nav-item active">
                                 <ul class="navbar-nav">
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            My Projects
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Proiectele Mele
                                         </a>
                                         <ul class="dropdown-menu dropdown-menu-dark">
                                             <li><a class="dropdown-item" href="https://github.com/daviddserb/HairDresser" target="_blank">Hair Dresser BE</a></li>
@@ -56,34 +54,45 @@
                                 </ul>
                         </li>
                         <li class="nav-item active">
-                            <a href="galery.html" class="nav-link">Galery</a>
+                            <a href="contactRo.html" class="nav-link">Contact</a>
                         </li>
                         <li class="nav-item active">
-                            <a href="about.html" class="nav-link"><img class="flag" src="images/FlagUK.png"></a>
+                            <a href="galleryRo.html" class="nav-link">Galerie</a>
                         </li>
                         <li class="nav-item active">
-                            <a href="aboutRo.html" class="nav-link"><img class="flag" src="images/FlagRo.png"></a>
+                            <a href="index.html" class="nav-link"><img class="flag" src="../images/FlagUK.png"></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="indexRo.html" class="nav-link"><img class="flag" src="../images/FlagRo.png"></a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
 
-        <!-- descriere... -->
+        <div class="row description">
+            <div class="col-sm-8">
+                <img src="../images/SerbDavid1.jpg" class="img-fluid" alt="Responsive image" width="500">
+            </div>
+            <div class="col-sm-4">
+                <p>Ceau.</p>
+                <p>Eu sunt David si asta este pagina mea web.</p>
+                <p>Sper sa-ti placa!</p>
+            </div>
+        </div>
 
-        <!-- class="fixed-bottom" -->
         <footer>
             <section class="container">
                 <div class="contact">
-                    <h3>Contact Me</h3>
+                    <h3>Contacteaza-ma</h3>
                     <ul>
-                        <li><i class="fa-solid fa-address-card"></i>Str. Jules Michelet nr. 18, sect. 1 010463 Bucuresti ROMANIA</li>
-                        <li><i class="fa-solid fa-phone"></i>+40 742 056 778</li>
-                        <li><i class="fa fa-envelope" aria-hidden="true"></i>david.serb@student.upt.ro</li>
+                        <li><i class="fa-solid fa-address-card"></i> Str. Jules Michelet nr. 18, sect. 1 010463 Bucuresti ROMANIA</li>
+                        <li><i class="fa-solid fa-phone"></i> +40 742 056 778</li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i> david.serb@student.upt.ro</li>
                     </ul>
                 </div>
                 <div class="follow">
-                    <h3>Follow Me</h3>
+                    <h3>Urmareste-ma</h3>
                     <div class="social-links">
                         <a href="https://www.facebook.com/david.serb.7" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="https://www.linkedin.com/in/david-serb-06393b225/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>

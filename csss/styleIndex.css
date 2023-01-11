@@ -27,6 +27,18 @@ header {
     height: 20px;
 }
 
+/* DESCRIPTION: */
+.description {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.description img {
+    border-radius: 30px;
+}
+
 /* FOOTER (CSS FLEXBOX LAYOUT SYSTEM): */
 footer {
     /* Expands items to fill available free space or shrinks them to prevent overflow. */

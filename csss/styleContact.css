@@ -3,7 +3,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* HEADER: */
+/* HEADER */
 header {
     background-color: black;
 }
@@ -27,45 +27,33 @@ header {
     height: 20px;
 }
 
-/* DESCRIPTION: */
-.description {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-/* FOOTER (CSS FLEXBOX LAYOUT SYSTEM): */
+/* FOOTER */
 footer {
-    /* Expands items to fill available free space or shrinks them to prevent overflow. */
-    display: flex; /* Sets the sections on columns => concact + follow = one column, copyright = new column. */
-    flex-direction: column; /* Change the flex direction back to columns, so all elements will be on a new row.*/
+    display: flex;
+    flex-direction: column;
 
     background-color: black;
     color: white;
 
-    position: absolute; /* absolute/fixed */
+    position: absolute;
     bottom: 0;
     width: 100%;
 }
 
 .container {
-    display: flex; /* Set the elements (contact and follow) on columns. */
+    display: flex;
     padding: 20px 0;
-    margin: 0 auto; /* Set it in the middle of the page. */
+    margin: 0 auto;
 }
 
 .container h3 {
-    /* text-transform: capitalize; */
     margin-bottom: 15px;
     font-size: 25px;
 }
 
 .contact {
-    /* background-color: red; */
-    flex-grow: 1; /* Equally divided to take full width. */
-    flex-basis: 100%; /* Remain equally divided based on the content. */
-    /* border-right: 1px solid white; */
+    flex-grow: 1;
+    flex-basis: 100%;
 }
 
 .contact ul {
@@ -75,7 +63,6 @@ footer {
 }
 
 .follow {
-    /* background-color: orange; */
     flex-grow: 1;
     flex-basis: 100%;
 }
@@ -102,14 +89,11 @@ footer {
     border-top: 1px solid white;
 }
 
-/* RESPONSIVE: */
 @media(max-width: 575px) {
+    footer {
+        position: relative;
+    }
     .container {
         flex-direction: column;
-    }
-
-    .description img {
-        width: 330px;  
-        height: auto;  
     }
 }
